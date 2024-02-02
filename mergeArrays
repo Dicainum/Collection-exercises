@@ -1,0 +1,10 @@
+import _ from 'lodash';
+
+function mergeArrays(...arrays) {
+
+  const mergedArray = _.concat(...arrays);
+
+  const uniqueArray = _.uniq(mergedArray);
+
+  return uniqueArray;
+}
