@@ -1,0 +1,8 @@
+function getPropertyValue(object, property) {
+  if (object.hasOwnProperty(property)) {
+    return object[property];
+  }
+  else {
+    return undefined;
+  }
+}
