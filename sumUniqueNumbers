@@ -1,0 +1,12 @@
+import _ from 'lodash';
+
+function sumUniqueNumbers(arr) {
+  let UniqArr = _.uniq(arr);
+  let sum = 0;
+
+  for (let i = 0; i < UniqArr.length; i++) {
+    sum += UniqArr[i];
+  }
+
+  return sum;
+}
